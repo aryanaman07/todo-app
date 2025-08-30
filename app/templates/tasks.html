@@ -20,6 +20,8 @@
                         <div>
                             <span class="fw-bold">{{ task.title }}</span>
                             <span class="badge bg-secondary">{{ task.status }}</span>
+                            <br>
+                            <small class="text-muted">Created on: {{ task.created_at | localtime }}</small>
                         </div>
                         <div>
                             <!-- Toggle Task -->
